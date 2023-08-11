@@ -1,0 +1,356 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/textsearch/json?key&query=hardware%20store%20location=6%20Paimon%20St&radius=48000key=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 11 Aug 2023 17:05:05 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '266'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=18
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "error_message" : "You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account",
+           "html_attributions" : [],
+           "results" : [],
+           "status" : "REQUEST_DENIED"
+        }
+  recorded_at: Fri, 11 Aug 2023 17:05:05 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/textsearch/json?key=AIzaSyDKCSjiAwe-kjN21N6lQP_g9YwtzEPg5aY&query=hardware%20store%20location=6%20Paimon%20St&radius=48000key=AIzaSyDKCSjiAwe-kjN21N6lQP_g9YwtzEPg5aY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 11 Aug 2023 17:07:41 GMT
+      Expires:
+      - Fri, 11 Aug 2023 17:12:41 GMT
+      Cache-Control:
+      - public, max-age=300
+      Vary:
+      - Accept-Language
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '9968'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=471
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [
+              {
+                 "business_status" : "OPERATIONAL",
+                 "formatted_address" : "303 W South St, Lebanon, IN 46052, United States",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.0463324,
+                       "lng" : -86.4709683
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.04767807989272,
+                          "lng" : -86.46941907010726
+                       },
+                       "southwest" : {
+                          "lat" : 40.04497842010728,
+                          "lng" : -86.47211872989271
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+                 "icon_background_color" : "#4B96F3",
+                 "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+                 "name" : "Gillman Home Center",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3000,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/109041879306242959273\"\u003eKramer Lumber Do it Best\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "AUacShg67pIgTVKYbRB93_PoRPFJ4I_BaKbvRfIDiyGUPHb4HIj2R1RgY67sGXgTsz_w5xH_MUpbS-20MiJ5Nols8DJms39NwLVIaIqsl_kSCfYnKlpQZ_5am1haqoxZM92SSve-wwT-JTFs-u8-eSAmJG2YhJb66kp7xAN82TLgOzhpRo0",
+                       "width" : 4000
+                    }
+                 ],
+                 "place_id" : "ChIJvYI3auNOE4gRuHIsQBYYv4U",
+                 "plus_code" : {
+                    "compound_code" : "2GWH+GG Lebanon, Indiana",
+                    "global_code" : "86GM2GWH+GG"
+                 },
+                 "rating" : 4.5,
+                 "reference" : "ChIJvYI3auNOE4gRuHIsQBYYv4U",
+                 "types" : [
+                    "hardware_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                 ],
+                 "user_ratings_total" : 90
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "formatted_address" : "800 E Main St, Brownsburg, IN 46112, United States",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 39.8393762,
+                       "lng" : -86.3832718
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.84064997989272,
+                          "lng" : -86.38193212010728
+                       },
+                       "southwest" : {
+                          "lat" : 39.83795032010728,
+                          "lng" : -86.38463177989271
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+                 "icon_background_color" : "#4B96F3",
+                 "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+                 "name" : "Brownsburg Ace Hardware",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3264,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/112191400593036504334\"\u003eA Google User\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "AUacShh3flCA1rJfJuQVzbmJa4P0gZoBIb1y68c-nCQKerPJoBfBk2Iu-w6PXIKo5QgLmW4wO3BlJ43hLVPoKIn_K4VGEI_RudeNp-WrGdDVtBPK7MnK_YCutN6_kAiz9WSEZvjIa0SvXExYyOm5X865L0hA2lI0sZRykLH-wxonEjR2HXrZ",
+                       "width" : 4928
+                    }
+                 ],
+                 "place_id" : "ChIJ7WrXzH6ubIgR74rJblym7oA",
+                 "plus_code" : {
+                    "compound_code" : "RJQ8+QM Brownsburg, Indiana",
+                    "global_code" : "86FMRJQ8+QM"
+                 },
+                 "price_level" : 2,
+                 "rating" : 4.4,
+                 "reference" : "ChIJ7WrXzH6ubIgR74rJblym7oA",
+                 "types" : [ "hardware_store", "store", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 316
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "formatted_address" : "25 Boone Village, Zionsville, IN 46077, United States",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 39.95138499999999,
+                       "lng" : -86.27687879999999
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.95277477989272,
+                          "lng" : -86.27569032010726
+                       },
+                       "southwest" : {
+                          "lat" : 39.95007512010727,
+                          "lng" : -86.27838997989271
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+                 "icon_background_color" : "#4B96F3",
+                 "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+                 "name" : "Great Lakes Ace",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 800,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/104756258938938041696\"\u003eAkard True Value Hardware\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "AUacShhq9tN6E8eWD211nDIWPUDvq1MsXGVwIaD6nUiK-Ue2U1zAee28cPrGQnqH4SKKeruWH2tte18bvvZTdv8nBEJQV0u4mue7pfLE9ikiYi2Ccf1SGUgPHiR4xZmEl0CaJ4abA7jJJanZ3WsFH3-6RFFBOjTyh2a_6U4DOvzx29OswMws",
+                       "width" : 1600
+                    }
+                 ],
+                 "place_id" : "ChIJba3q4BJVE4gRBWJyO9pj-yo",
+                 "plus_code" : {
+                    "compound_code" : "XP2F+H6 Zionsville, Indiana",
+                    "global_code" : "86FMXP2F+H6"
+                 },
+                 "rating" : 4.5,
+                 "reference" : "ChIJba3q4BJVE4gRBWJyO9pj-yo",
+                 "types" : [
+                    "hardware_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                 ],
+                 "user_ratings_total" : 110
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "formatted_address" : "6711 E. State Road 334, Zionsville, IN 46077, United States",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 39.9471609,
+                       "lng" : -86.3417874
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.94876952989272,
+                          "lng" : -86.34032802010729
+                       },
+                       "southwest" : {
+                          "lat" : 39.94606987010727,
+                          "lng" : -86.34302767989273
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+                 "icon_background_color" : "#4B96F3",
+                 "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+                 "name" : "Lowe's Home Improvement",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 1080,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/108350014834310130898\"\u003eVimace Vimace\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "AUacShjA95rzITXz7WgnCUikzoYi1Tu82kMb56fbPb0LDi0frPC0o82oK3waHkD1Y_e8Ymt6V7YBvXxUrsj8PmrLiSdU7Ppa2c7D1jepRaBVerSD3l0X7vWQ2zf7GCYzjlbhIpWWfgtGa3RdfM3cr-K_vhsVhhSGBqRte2JEjT6Mp8w2zQVF",
+                       "width" : 1920
+                    }
+                 ],
+                 "place_id" : "ChIJP9_YmWZTE4gRs_eYbFmM2q4",
+                 "plus_code" : {
+                    "compound_code" : "WMW5+V7 Zionsville, Indiana",
+                    "global_code" : "86FMWMW5+V7"
+                 },
+                 "price_level" : 1,
+                 "rating" : 4.3,
+                 "reference" : "ChIJP9_YmWZTE4gRs_eYbFmM2q4",
+                 "types" : [
+                    "hardware_store",
+                    "furniture_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                 ],
+                 "user_ratings_total" : 755
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "formatted_address" : "4131 S Indianapolis Rd, Whitestown, IN 46075, United States",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 39.9805011,
+                       "lng" : -86.39906959999999
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.98202732989272,
+                          "lng" : -86.39746782010728
+                       },
+                       "southwest" : {
+                          "lat" : 39.97932767010728,
+                          "lng" : -86.40016747989272
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+                 "icon_background_color" : "#4B96F3",
+                 "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+                 "name" : "Tractor Supply Co.",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3024,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/100514827411863504538\"\u003eA Google User\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "AUacShjK4lD4xYPrfaUbJDaQyYxV6ungWHz7itMVYjZJuwpQvcgSJLj7UdCU8PWFcUPsDbQRIDs5SKffmLkqpXqsXKaAJES9reSnefiKxYZAfYYD3D2whIShtBMBM5n3eCGXpuWy6VQavCSpTtnnqd2LGBKBWJIpFHxvzO9i2Dvb7RIjqdy_",
+                       "width" : 4032
+                    }
+                 ],
+                 "place_id" : "ChIJmXMcwgRTE4gRnE7TTl4saHY",
+                 "plus_code" : {
+                    "compound_code" : "XJJ2+69 Whitestown, Indiana",
+                    "global_code" : "86FMXJJ2+69"
+                 },
+                 "rating" : 4.7,
+                 "reference" : "ChIJmXMcwgRTE4gRnE7TTl4saHY",
+                 "types" : [ "hardware_store", "store", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 197
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Fri, 11 Aug 2023 17:07:41 GMT
+recorded_with: VCR 6.2.0
