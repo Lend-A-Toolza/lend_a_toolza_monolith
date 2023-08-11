@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 class Store
-  attr_reader :id, :name, :formatted_address
+  attr_reader :name,
+              :formatted_address,
+              :id
 
-  def initialize(data)
-    @id = data[:id]
-    @name = data[:attributes][:name]
-    @formatted_address = data[:attributes][:formatted_address]
+  def initialize(store_data)
+    @name = store_data[:name]
+    @formatted_address = store_data[:formatted_address]
+    @id = store_data[:place_id]
   end
 end

@@ -2352,4 +2352,538 @@ http_interactions:
         tool to hammer nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","status":"available","address":"4530
         32nd St, San Diego, CA 92116","user_id":290,"borrower_id":null}}]}'
   recorded_at: Fri, 04 Aug 2023 19:53:27 GMT
+- request:
+    method: post
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/2/tools
+    body:
+      encoding: UTF-8
+      string: '{"name":"Hammer","status":"available","description":"A tool to hammer
+        nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","user_id":2,"address":"4530
+        32nd St, San Diego, CA 92116"}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Fri, 11 Aug 2023 16:59:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f5206beda941251-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"93dfec513962139c92b0fc243c42f09d"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 9ce27d2f-77c6-4f2d-86c9-4baad2580d6d
+      X-Runtime:
+      - '0.556402'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"47","type":"tool","attributes":{"name":"Hammer","description":"A
+        tool to hammer nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","status":"available","address":"4530
+        32nd St, San Diego, CA 92116","user_id":2,"borrower_id":null}}}'
+  recorded_at: Fri, 11 Aug 2023 16:59:39 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/2/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Aug 2023 16:59:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f5207c4ebe50280-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"2a561268583a00b3619512824fe538d8"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 204af36f-86c2-4523-9a44-33fc502127be
+      X-Runtime:
+      - '0.005393'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"5","type":"tool","attributes":{"name":"Hammer","description":"Smashem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"6","type":"tool","attributes":{"name":"Saw","description":"Cutem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"7","type":"tool","attributes":{"name":"Drill","description":"Drillem","image":"image.jpg","status":"available","address":"1234
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":4,"borrower_id":2}},{"id":"8","type":"tool","attributes":{"name":"Screwdriver","description":"Screwem","image":"image.jpg","status":"available","address":"1237
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":7,"borrower_id":2}},{"id":"31","type":"tool","attributes":{"name":"Drill","description":"Drills
+        stuff","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/Screenshot%202023-08-04%20at%207.08.45%20AM.png","status":"available","address":"46052","user_id":2,"borrower_id":null}},{"id":"47","type":"tool","attributes":{"name":"Hammer","description":"A
+        tool to hammer nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","status":"available","address":"4530
+        32nd St, San Diego, CA 92116","user_id":2,"borrower_id":null}}]}'
+  recorded_at: Fri, 11 Aug 2023 16:59:39 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/2/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Aug 2023 16:59:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f5207c6bbbd1144-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"2a561268583a00b3619512824fe538d8"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 13e018be-589f-49c4-bb4a-8d2f70a8d4b0
+      X-Runtime:
+      - '0.004775'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"5","type":"tool","attributes":{"name":"Hammer","description":"Smashem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"6","type":"tool","attributes":{"name":"Saw","description":"Cutem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"7","type":"tool","attributes":{"name":"Drill","description":"Drillem","image":"image.jpg","status":"available","address":"1234
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":4,"borrower_id":2}},{"id":"8","type":"tool","attributes":{"name":"Screwdriver","description":"Screwem","image":"image.jpg","status":"available","address":"1237
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":7,"borrower_id":2}},{"id":"31","type":"tool","attributes":{"name":"Drill","description":"Drills
+        stuff","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/Screenshot%202023-08-04%20at%207.08.45%20AM.png","status":"available","address":"46052","user_id":2,"borrower_id":null}},{"id":"47","type":"tool","attributes":{"name":"Hammer","description":"A
+        tool to hammer nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","status":"available","address":"4530
+        32nd St, San Diego, CA 92116","user_id":2,"borrower_id":null}}]}'
+  recorded_at: Fri, 11 Aug 2023 16:59:40 GMT
+- request:
+    method: post
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/10/tools
+    body:
+      encoding: UTF-8
+      string: '{"name":"Hammer","status":"available","description":"A tool to hammer
+        nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","user_id":10,"address":"4530
+        32nd St, San Diego, CA 92116"}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Fri, 11 Aug 2023 17:10:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f521760af351138-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c92b689e4fa0159348b0268c5715a77d"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 3711fc8c-769a-4ef6-b22e-09e135938f21
+      X-Runtime:
+      - '0.605496'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"48","type":"tool","attributes":{"name":"Hammer","description":"A
+        tool to hammer nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","status":"available","address":"4530
+        32nd St, San Diego, CA 92116","user_id":10,"borrower_id":null}}}'
+  recorded_at: Fri, 11 Aug 2023 17:10:19 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/10/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Aug 2023 17:10:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f52176619f1e1c7-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"da99a9fed413f2218ccd5e3f9a1840f7"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - a326de13-1649-44bf-a530-473bd50d34c9
+      X-Runtime:
+      - '0.004590'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"48","type":"tool","attributes":{"name":"Hammer","description":"A
+        tool to hammer nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","status":"available","address":"4530
+        32nd St, San Diego, CA 92116","user_id":10,"borrower_id":null}}]}'
+  recorded_at: Fri, 11 Aug 2023 17:10:19 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/10/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Aug 2023 17:10:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f521767caa26387-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"da99a9fed413f2218ccd5e3f9a1840f7"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 21db6498-6513-4086-9f45-699e03c4b79d
+      X-Runtime:
+      - '0.004084'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"48","type":"tool","attributes":{"name":"Hammer","description":"A
+        tool to hammer nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","status":"available","address":"4530
+        32nd St, San Diego, CA 92116","user_id":10,"borrower_id":null}}]}'
+  recorded_at: Fri, 11 Aug 2023 17:10:20 GMT
+- request:
+    method: post
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/18/tools
+    body:
+      encoding: UTF-8
+      string: '{"name":"Hammer","status":"available","description":"A tool to hammer
+        nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","user_id":18,"address":"4530
+        32nd St, San Diego, CA 92116"}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Fri, 11 Aug 2023 17:13:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f521bc468fd638a-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"27652284e005f4e3c8f27dcb3981365a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 02cbdb26-69e7-43bf-931f-56f26feca0e8
+      X-Runtime:
+      - '0.014321'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"49","type":"tool","attributes":{"name":"Hammer","description":"A
+        tool to hammer nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","status":"available","address":"4530
+        32nd St, San Diego, CA 92116","user_id":18,"borrower_id":null}}}'
+  recorded_at: Fri, 11 Aug 2023 17:13:18 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/18/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Aug 2023 17:13:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f521bc60dc828fb-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"71c7091d86d0a988afbbebf650ecef0e"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - d55f14fb-1780-43db-9029-32fc6041e922
+      X-Runtime:
+      - '0.040021'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"49","type":"tool","attributes":{"name":"Hammer","description":"A
+        tool to hammer nails","image":"https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg","status":"available","address":"4530
+        32nd St, San Diego, CA 92116","user_id":18,"borrower_id":null}}]}'
+  recorded_at: Fri, 11 Aug 2023 17:13:19 GMT
 recorded_with: VCR 6.2.0
